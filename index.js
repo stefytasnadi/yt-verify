@@ -8,7 +8,6 @@ client.login(process.env.TOKEN);
 
 client.on("message", message => {
     client.user.setActivity("bot made by Aredray"); 
-    let role = message.guild.roles.cache.find(r => r.name === "Advanced Manelist");
     var member; 
     var image;
 
@@ -19,6 +18,7 @@ client.on("message", message => {
     }     
     function attachIsImage(msgAttach) {
         if (message.channel.name.includes("『🍸』丨sub-proof")){
+            let role = message.guild.roles.cache.find(r => r.name === "Advanced Manelist");
             var url = msgAttach.url;
             //True if this url is a png image.
             image = url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;
