@@ -16,8 +16,8 @@ client.on("message", message => {
     }     
     function attachIsImage(msgAttach) {
         if (message.channel.name.includes("『🍸』丨sub-proof")){
-            var role = message.guild.roles.cache.find(r => r.name === "Advanced Manelist");
-            message.guild.member(message.author).roles.add(role);
+            var role = message.guild.roles.find(role => role.name === "Advanced Manelist");
+            message.member.addRole(role);
             message.react("👍");
             //console.log(message.channel.messages);
             message.author.send('Hello there thanks for subbing, note that to get verified and get access to the rest, it sometimes takes some time. So please be pacient if somethings wrong, dm me thank you');
