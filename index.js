@@ -21,7 +21,9 @@ client.on("message", message => {
             message.react("👍");
             //console.log(message.channel.messages);
             message.author.send('Thank you for subbing, you can now access the rest of the server. Also make sure to read the rules and if you have any question I answer to all dms');
-        }
+            console.log("Succesfully verified")
+        }else{
+            console.log("Image posted in other channel")
     }
 });
 
