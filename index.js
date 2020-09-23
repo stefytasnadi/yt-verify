@@ -20,7 +20,7 @@ client.on("message", message => {
             message.member.addRole(role);
             message.react("👍");
             //console.log(message.channel.messages);
-            message.author.send('Hello there thanks for subbing, note that to get verified and get access to the rest, it sometimes takes some time. So please be pacient if somethings wrong, dm me thank you');
+            message.author.send('Hello there thanks for subbing, unfortunately the bot is not working properly so dont panic I will manually verify you next time :)');
             console.log("Succesfully verified")
         }else{
             console.log("Image posted in other channel")
