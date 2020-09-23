@@ -16,7 +16,7 @@ client.on("message", message => {
     }     
     function attachIsImage(msgAttach) {
         if (message.channel.name.includes("『🍸』丨sub-proof")){
-            var role = message.guild.roles.find(role => role.name === "Advanced Manelist");
+            var role = message.guild.roles.cache.find(role => role.name === "Advanced Manelist");
             message.member.addRole(role);
             message.react("👍");
             //console.log(message.channel.messages);
