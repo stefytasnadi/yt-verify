@@ -24,6 +24,7 @@ client.on("message", message => {
             console.log("Succesfully verified")
         }else{
             console.log("Image posted in other channel")
+        }
     }
 });
 
