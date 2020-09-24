@@ -16,14 +16,11 @@ client.on("message", message => {
     }     
     function attachIsImage(msgAttach) {
         if (message.channel.name.includes("『🍸』丨sub-proof")){
-            var role = message.guild.roles.cache.find(role => role.name === "Advanced Manelist");
-            message.member.addRole(role);
+            var role = message.guild.roles.cache.find(r => r.name === "Advanced Manelist");
+            message.guild.member(message.author).roles.add(role);
             message.react("👍");
             //console.log(message.channel.messages);
-            message.author.send('Hello there thanks for subbing, unfortunately the bot is not working properly so dont panic I will manually verify you next time :)');
-            console.log("Succesfully verified")
-        }else{
-            console.log("Image posted in other channel")
+            message.author.send('Thank you for subbing, you can now access the rest of the server. Also make sure to read the rules and if you have any question dm me :)');
         }
     }
 });
