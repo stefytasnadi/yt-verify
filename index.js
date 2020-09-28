@@ -21,7 +21,7 @@ client.on("message", message => {
             message.guild.member(author).roles.add(role);
             message.react("👍");
             //console.log(message.channel.messages);
-            message.author.send('Thank you for subbing, you can now access the rest of the server. Also make sure to read the rules and if you have any question I answer to all dms');
+            message.author.send('Thank you for subbing, you can now access the rest of the server. Also make sure to read the rules and if you have any question I answer to all dm s');
         }
     }
 });
